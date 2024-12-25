@@ -28,7 +28,7 @@ const Countdown = () => {
 
     return (
         <div className="text-center">
-            <h1 className="text-5xl font-bold mb-4 text-white">31 ÇEKMEYE NE KADAR?</h1>
+            <h1 className="text-5xl font-bold mb-4 text-white">GÖNENDEN KURTULUŞUMUZA NE KADAR KALDI?</h1>
             <div className="grid grid-cols-3 gap-4">
                 <div className="text-2xl font-semibold">
                     <span className="block text-gray-400">Yıl</span>
