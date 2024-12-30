@@ -40,7 +40,7 @@ const Countdown = () => {
                             <img 
                                 src="/bitisefekti.jpg" 
                                 alt="Süre doldu görseli" 
-                                className="w-[480px]"
+                                className="w-[400px] md:w-[480px]"
                             />
                             <div className="hidden md:block text-6xl font-bold text-red-500 transform rotate-90 whitespace-nowrap">HAHAHAHA</div>
                         </div>
