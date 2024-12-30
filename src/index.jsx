@@ -34,7 +34,7 @@ const Countdown = () => {
                 <div className="mt-8">
                     <h2 className="text-4xl font-bold text-green-500 mb-4">Süre Doldu!</h2>
                     <img 
-                        src="./public/bitisefekti.jpg" 
+                        src="/bitisefekti.jpg" 
                         alt="Süre doldu görseli" 
                         className="mx-auto max-w-md"
                     />
