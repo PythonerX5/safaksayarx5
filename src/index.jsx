@@ -33,11 +33,19 @@ const Countdown = () => {
             {timeIsUp ? (
                 <div className="mt-8">
                     <h2 className="text-4xl font-bold text-green-500 mb-4">Süre Doldu!</h2>
-                    <img 
-                        src="/bitisefekti.jpg" 
-                        alt="Süre doldu görseli" 
-                        className="mx-auto max-w-md"
-                    />
+                    <div className="flex flex-col items-center">
+                        <div className="text-6xl font-bold text-red-500 mb-4">HAHAHAHA</div>
+                        <div className="flex items-center">
+                            <div className="text-6xl font-bold text-red-500 mr-4">HAHAHAHA</div>
+                            <img 
+                                src="/bitisefekti.jpg" 
+                                alt="Süre doldu görseli" 
+                                className="mx-auto w-[600px]"
+                            />
+                            <div className="text-6xl font-bold text-red-500 ml-4">HAHAHAHA</div>
+                        </div>
+                        <div className="text-6xl font-bold text-red-500 mt-4">HAHAHAHA</div>
+                    </div>
                 </div>
             ) : (
                 <>
