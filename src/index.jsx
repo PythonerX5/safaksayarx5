@@ -31,20 +31,21 @@ const Countdown = () => {
     return (
         <div className="text-center">
             {timeIsUp ? (
-                <div className="mt-8">
-                    <h2 className="text-4xl font-bold text-green-500 mb-4">Süre Doldu!</h2>
-                    <div className="flex flex-col items-center">
-                        <div className="text-6xl font-bold text-red-500 mb-4">HAHAHAHA</div>
-                        <div className="flex items-center justify-center space-x-0">
-                            <div className="hidden md:block text-6xl font-bold text-red-500 transform -rotate-90 whitespace-nowrap">HAHAHAHA</div>
-                            <img 
-                                src="/bitisefekti.jpg" 
-                                alt="Süre doldu görseli" 
-                                className="w-[400px] md:w-[480px]"
-                            />
-                            <div className="hidden md:block text-6xl font-bold text-red-500 transform rotate-90 whitespace-nowrap">HAHAHAHA</div>
+                <div className="min-h-screen flex items-center justify-center">
+                    <div className="w-full px-4 md:px-8">
+                        <div className="flex flex-col items-center">
+                            <div className="text-4xl md:text-6xl font-bold text-red-500 mb-4">HAHAHAHA</div>
+                            <div className="flex items-center justify-center space-x-0 w-full">
+                                <div className="hidden md:block text-6xl font-bold text-red-500 transform -rotate-90 whitespace-nowrap">HAHAHAHA</div>
+                                <img 
+                                    src="/bitisefekti.jpg" 
+                                    alt="Süre doldu görseli" 
+                                    className="w-[90vw] max-w-[400px] md:max-w-[480px]"
+                                />
+                                <div className="hidden md:block text-6xl font-bold text-red-500 transform rotate-90 whitespace-nowrap">HAHAHAHA</div>
+                            </div>
+                            <div className="text-4xl md:text-6xl font-bold text-red-500 mt-4">HAHAHAHA</div>
                         </div>
-                        <div className="text-6xl font-bold text-red-500 mt-4">HAHAHAHA</div>
                     </div>
                 </div>
             ) : (
