@@ -35,14 +35,14 @@ const Countdown = () => {
                     <h2 className="text-4xl font-bold text-green-500 mb-4">Süre Doldu!</h2>
                     <div className="flex flex-col items-center">
                         <div className="text-6xl font-bold text-red-500 mb-4">HAHAHAHA</div>
-                        <div className="flex items-center">
-                            <div className="text-6xl font-bold text-red-500 mr-4">HAHAHAHA</div>
+                        <div className="flex items-center justify-center space-x-0">
+                            <div className="text-6xl font-bold text-red-500 transform -rotate-90 whitespace-nowrap">HAHAHAHA</div>
                             <img 
                                 src="/bitisefekti.jpg" 
                                 alt="Süre doldu görseli" 
-                                className="mx-auto w-[600px]"
+                                className="w-[480px]"
                             />
-                            <div className="text-6xl font-bold text-red-500 ml-4">HAHAHAHA</div>
+                            <div className="text-6xl font-bold text-red-500 transform rotate-90 whitespace-nowrap">HAHAHAHA</div>
                         </div>
                         <div className="text-6xl font-bold text-red-500 mt-4">HAHAHAHA</div>
                     </div>
@@ -52,6 +52,7 @@ const Countdown = () => {
                     <h1 className="text-5xl font-bold mb-4 text-white">GİTMEYE NE KADAR KALDI?</h1>
                     <div className="grid grid-cols-3 gap-4">
                         <div className="text-2xl font-semibold">
+                            
                             <span className="block text-gray-400">Yıl</span>
                             <span className="text-green-600">{timeLeft.yil || 0}</span>
                         </div>
