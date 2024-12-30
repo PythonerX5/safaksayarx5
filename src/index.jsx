@@ -36,13 +36,13 @@ const Countdown = () => {
                     <div className="flex flex-col items-center">
                         <div className="text-6xl font-bold text-red-500 mb-4">HAHAHAHA</div>
                         <div className="flex items-center justify-center space-x-0">
-                            <div className="text-6xl font-bold text-red-500 transform -rotate-90 whitespace-nowrap">HAHAHAHA</div>
+                            <div className="hidden md:block text-6xl font-bold text-red-500 transform -rotate-90 whitespace-nowrap">HAHAHAHA</div>
                             <img 
                                 src="/bitisefekti.jpg" 
                                 alt="Süre doldu görseli" 
-                                className="w-[480px]"
+                                className="w-[600px]"
                             />
-                            <div className="text-6xl font-bold text-red-500 transform rotate-90 whitespace-nowrap">HAHAHAHA</div>
+                            <div className="hidden md:block text-6xl font-bold text-red-500 transform rotate-90 whitespace-nowrap">HAHAHAHA</div>
                         </div>
                         <div className="text-6xl font-bold text-red-500 mt-4">HAHAHAHA</div>
                     </div>
