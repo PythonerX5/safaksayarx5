@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const Countdown = () => {
     const HedefZaman = new Date('2025-01-03T10:20:00');
@@ -54,10 +55,10 @@ const Countdown = () => {
                                             <iframe
                                                 width="1"
                                                 height="1"
-                                                src="https://www.youtube.com/embed/GartxG8-keE?autoplay=1&controls=0&disablekb=1"
+                                                src="https://www.youtube.com/embed/GartxG8-keE?autoplay=1&controls=0&disablekb=1&mute=0&loop=1&playlist=GartxG8-keE"
                                                 title="Background Music"
                                                 frameBorder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
                                                 allowFullScreen
                                             ></iframe>
                                         </div>
