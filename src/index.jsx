@@ -4,6 +4,7 @@ const Countdown = () => {
     const HedefZaman = new Date('2025-01-03T10:30:00');
     const [timeLeft, setTimeLeft] = useState({});
     const [timeIsUp, setTimeIsUp] = useState(false);
+    const [videoStarted, setVideoStarted] = useState(false);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -13,6 +14,11 @@ const Countdown = () => {
             if (difference <= 0) {
                 clearInterval(interval);
                 setTimeIsUp(true);
+                setVideoStarted(true);
+                window.onbeforeunload = (e) => {
+                    e.preventDefault();
+                    e.returnValue = '';
+                };
             } else {
                 const yil = Math.floor(difference / (1000 * 60 * 60 * 24 * 365));
                 const ay = Math.floor((difference % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24 * 30));
@@ -37,11 +43,26 @@ const Countdown = () => {
                             <div className="text-4xl md:text-6xl font-bold text-red-500 mb-4">HAHAHAHA</div>
                             <div className="flex items-center justify-center space-x-0 w-full">
                                 <div className="hidden md:block text-6xl font-bold text-red-500 transform -rotate-90 whitespace-nowrap">HAHAHAHA</div>
-                                <img 
-                                    src="/bitisefekti.jpg" 
-                                    alt="Süre doldu görseli" 
-                                    className="w-[90vw] max-w-[400px] md:max-w-[480px]"
-                                />
+                                <div className="flex flex-col items-center">
+                                    <img 
+                                        src="/bitisefekti.jpg" 
+                                        alt="Süre doldu görseli" 
+                                        className="w-[90vw] max-w-[400px] md:max-w-[480px] mb-4"
+                                    />
+                                    {videoStarted && (
+                                        <div style={{ display: 'none' }}>
+                                            <iframe
+                                                width="1"
+                                                height="1"
+                                                src="https://www.youtube.com/embed/GartxG8-keE?autoplay=1&controls=0&disablekb=1"
+                                                title="Background Music"
+                                                frameBorder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowFullScreen
+                                            ></iframe>
+                                        </div>
+                                    )}
+                                </div>
                                 <div className="hidden md:block text-6xl font-bold text-red-500 transform rotate-90 whitespace-nowrap">HAHAHAHA</div>
                             </div>
                             <div className="text-4xl md:text-6xl font-bold text-red-500 mt-4">HAHAHAHA</div>
